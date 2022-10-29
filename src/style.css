@@ -1,3 +1,91 @@
-h1 {
-  font-size: 50px;
+body {
+  text-align: center;
+  background-color: black;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/netrebko.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1,
+h2,
+h3 {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin: 0;
+}
+
+header h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 286px;
+  padding: 16px 32px;
+  gap: 10px;
+  background: #885df1;
+  border-radius: 100px;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+n {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    line-height: 1;
+    font-size: 70px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
 }
