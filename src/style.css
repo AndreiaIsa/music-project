@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  text-align: center;
 }
 
 .container {
@@ -12,7 +13,7 @@ header {
   padding-top: 285px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/netrebko.webp");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -77,7 +78,7 @@ footer {
   }
   header h1 {
     line-height: 1;
-    font-size: 70px;
+    font-size: 50px;
   }
 
   header h2 {
@@ -86,5 +87,10 @@ footer {
 
   header h3 {
     font-size: 14px;
+  }
+
+  header a {
+    padding: 10px 25px;
+    font-size: 12px;
   }
 }
