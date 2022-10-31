@@ -77,20 +77,6 @@ header a {
   color: var(--primary-color);
 }
 
-.links {
-  list-style: none;
-}
-
-footer {
-  color: var(--primary-color);
-  background-image: linear-gradient(rgba(2, 3, 4, 0.8), rgba(2, 3, 4, 0.8)),
-    url("../images/anna.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 100px;
-  padding-bottom: 66px;
-}
-
 .main-grid {
   display: grid;
   grid-gap: 20px;
@@ -161,7 +147,6 @@ main p {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 13px;
-  line-height: 1;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--primary-color);
@@ -171,7 +156,6 @@ main p {
   font-family: "Playfair Display";
   font-weight: 700;
   font-size: 48px;
-  line-height: 64px;
 }
 
 .video {
@@ -251,7 +235,6 @@ main p {
   font-family: "Poppins";
   font-weight: 700;
   font-size: 13px;
-  line-height: 20px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--primary-color);
@@ -262,7 +245,6 @@ main p {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 64px;
 }
 
 .more-videos {
@@ -272,6 +254,20 @@ main p {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.links {
+  list-style: none;
+}
+
+footer {
+  color: var(--primary-color);
+  background-image: linear-gradient(rgba(2, 3, 4, 0.8), rgba(2, 3, 4, 0.8)),
+    url("../images/anna.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 66px;
 }
 
 .grid {
