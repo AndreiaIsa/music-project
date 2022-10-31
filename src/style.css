@@ -1,3 +1,9 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #885df1;
+  --accent-color: #272044;
+}
+
 body {
   background-color: black;
   text-align: center;
@@ -24,7 +30,7 @@ header {
 header h1,
 h2,
 h3 {
-  color: white;
+  color: var(--primary-color);
   font-family: "Playfair Display", serif;
 }
 
@@ -61,15 +67,14 @@ header a {
   margin-bottom: 286px;
   padding: 16px 32px;
   gap: 10px;
-  background: #885df1;
+  background: var(--secondary-color);
   border-radius: 100px;
   font-family: "Roboto";
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: white;
+  color: var(--primary-color);
 }
 
 .links {
@@ -77,7 +82,7 @@ header a {
 }
 
 footer {
-  color: white;
+  color: var(--primary-color);
   background-image: linear-gradient(rgba(2, 3, 4, 0.8), rgba(2, 3, 4, 0.8)),
     url("../images/anna.jpg");
   background-size: 100%;
@@ -86,10 +91,193 @@ footer {
   padding-bottom: 66px;
 }
 
+.main-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+main h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700px;
+  font-size: 13px;
+  line-height: 2px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+main h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+main p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f9f4ff;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.netrebko-shoot {
+  max-width: 750px;
+  max-height: 670px;
+}
+
+.biography {
+  gap: 10px;
+  font-family: "Roboto";
+  background: var(--secondary-color);
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: flex;
+  flex: start;
+  padding: 16px 32px;
+  max-width: 85px;
+}
+
+.performances-section {
+  padding-top: 102px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/netrebko-anna.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.performances h4 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.performances h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.performances-videos {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.video-performance {
+  background: var(--primary-color);
+  box-shadow: 10px 10px 40px rgba(7, 5, 20, 0.2);
+  border-radius: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.performances-videos h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--accent-color);
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.performances-videos h5 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--accent-color);
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.performances-videos p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--accent-color);
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.performances-videos a {
+  gap: 10px;
+  font-family: "Roboto";
+  background: var(--secondary-color);
+  border-radius: 100px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-flex;
+  padding: 16px 32px;
+  margin-bottom: 43px;
+}
+
+.more-section {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.more-performances h4 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.more-performances h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.more-videos {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .grid {
   display: grid;
+  grid-gap: 30px;
   grid-template-columns: 2fr 2fr 1fr;
-  grid-gap: 20px;
   text-align: left;
 }
 
@@ -114,7 +302,7 @@ footer a {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-  color: white;
+  color: var(--primary-color);
 }
 
 footer p {
@@ -126,7 +314,16 @@ footer p {
 }
 
 p {
-  color: white;
+  color: var(--primary-color);
+}
+
+.git-link {
+  color: rgb(210, 211, 215);
+  text-decoration: none;
+}
+
+.git-link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 960px) {
@@ -149,16 +346,116 @@ p {
   header a {
     padding: 10px 25px;
     font-size: 12px;
-    color: white;
+    color: var(--primary-color);
+  }
+
+  .main-grid {
+    display: block;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+  }
+
+  main h4 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  main h3 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  main p {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .netrebko-shoot {
+    max-width: 100%;
+  }
+
+  .biography {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 25px;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .performances-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .performances-videos {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .video-performance {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .performances h3 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .performances-videos h4 {
+    font-size: 8px;
+  }
+
+  .performances-videos h5 {
+    font-size: 10px;
+  }
+
+  .performances-videos p {
+    font-size: 10px;
+  }
+
+  .performances-videos a {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+
+  .more-performances h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .more-performances h3 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .more-videos {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: block;
+    margin: 0 auto;
   }
 
   footer {
     padding-top: 5px;
     padding-bottom: 80px;
-  }
-  .grid {
-    display: block;
-    margin: 0 auto;
   }
 
   footer h4 {
